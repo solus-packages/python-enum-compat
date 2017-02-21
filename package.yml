@@ -1,0 +1,16 @@
+name       : python-enum-compat
+version    : 0.0.2
+release    : 1
+source     :
+    - https://pypi.python.org/packages/95/6e/26bdcba28b66126f66cf3e4cd03bcd63f7ae330d29ee68b1f6b623550bfa/enum-compat-0.0.2.tar.gz : 939ceff18186a5762ae4db9fa7bfe017edbd03b66526b798dd8245394c8a4192
+license    : MIT
+component  : programming.python
+summary    : enum/enum34 compatibility package
+description: |
+    This is a virtual package, its whole purpose is to install enum34 on Python older than 3.4.
+builddeps  :
+    - python-setuptools
+build      : |
+    %python_setup    
+install    : |
+    %python_install
